@@ -37,8 +37,8 @@ def create_bins_df(df):
     rental_counts = day_df["rental_category"].value_counts()
     return rental_counts
 
-day_df = pd.read_csv("day_df.csv")
-hour_df = pd.read_csv("hour_df.csv")
+day_df = pd.read_csv("dashboard/day_df.csv")
+hour_df = pd.read_csv("dashboard/hour_df.csv")
 
 selected_option = st.sidebar.radio(
     "Pilih Tren yang Ingin Ditampilkan:",
